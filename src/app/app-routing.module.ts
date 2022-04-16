@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
+import { NgModule, PLATFORM_INITIALIZER } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CrewComponent } from './crew/crew.component';
 import { DestinationComponent } from './destination/destination.component';
 import { HomeComponent } from './home/home.component';
+import { PlanetComponent } from './planet/planet.component';
 import { TechComponent } from './tech/tech.component';
 
 const routes: Routes = [
@@ -17,7 +18,18 @@ const routes: Routes = [
 
   {
     path:'destination',
-    component:DestinationComponent
+    component:DestinationComponent,
+    children:[
+       {
+         path:':name',
+         component:PlanetComponent
+       },
+       {
+         path:'* *',
+         component:PlanetComponent,
+       }
+
+    ]
   },
   {
     path:'crew',

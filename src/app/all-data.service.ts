@@ -4,27 +4,48 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AllDataService {
+  planetList=[
+    {
+      id:0,
+      name:'Moon'
+    },
+    {
+      id:1,
+      name:'Mars'
+    },
+    {
+      id:2,
+      name:'Europa'
+    },
+    {
+      id:3,
+      name:'Titan'
+    }
+  ]
   destinations=[
     {
+      id:0,
       name: "Moon",
       images: {
       png: "./assets/destination/image-moon.png",
       webp: "./assets/destination/image-moon.webp"},
-      description: "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
+      description: "See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
       distance: "384,400 km",
       travel: '3 days'
     },
     {
+      id:1,
       name: "Mars",
       images: {
        png: "./assets/destination/image-mars.png",
        webp: "./assets/destination/image-mars.webp"
       },
       description: "Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
-      distanc: "225 mil. km",
+      distance: "225 mil. km",
       travel: "9 months"
     },
     {
+      id:2,
       name: "Europa",
       images: {
        png: "./assets/destination/image-europa.png",
@@ -35,6 +56,7 @@ export class AllDataService {
       travel: "3 years"
     },
     {
+      id:3,
       name: "Titan",
       images: {
         png: "./assets/destination/image-titan.png",

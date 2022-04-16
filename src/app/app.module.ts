@@ -8,6 +8,8 @@ import { DestinationComponent } from './destination/destination.component';
 import { CrewComponent } from './crew/crew.component';
 import { TechComponent } from './tech/tech.component';
 import { MainHomeComponent } from './main-home/main-home.component';
+import { AllDataService } from './all-data.service';
+import { PlanetComponent } from './planet/planet.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,14 @@ import { MainHomeComponent } from './main-home/main-home.component';
     DestinationComponent,
     CrewComponent,
     TechComponent,
-    MainHomeComponent
+    MainHomeComponent,
+    PlanetComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AllDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
