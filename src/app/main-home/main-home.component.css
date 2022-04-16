@@ -1,0 +1,17 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    color: black;
+    text-transform: capitalize;
+    border: 1px solid black;
+    padding:0 5px;
+}
+.links-list{
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}

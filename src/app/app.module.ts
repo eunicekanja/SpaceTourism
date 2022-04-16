@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { DestinationComponent } from './destination/destination.component';
 import { CrewComponent } from './crew/crew.component';
 import { TechComponent } from './tech/tech.component';
+import { MainHomeComponent } from './main-home/main-home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TechComponent } from './tech/tech.component';
     HomeComponent,
     DestinationComponent,
     CrewComponent,
-    TechComponent
+    TechComponent,
+    MainHomeComponent
   ],
   imports: [
     BrowserModule,
