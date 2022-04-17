@@ -8,7 +8,7 @@ import { AllDataService } from '../all-data.service';
   styleUrls: ['./destination.component.css']
 })
 export class DestinationComponent implements OnInit {
-  id: number=0;
+  id!: number;
   planetItem: any;
   name:any;
   planetList=this.allData.planetList;
@@ -20,7 +20,11 @@ export class DestinationComponent implements OnInit {
   constructor(private allData:AllDataService,private activeRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
-    //console.log(this.activeRoute.params)
+    this.name=this.destinationList[0].name;
+    this.desc=this.destinationList[0].description;
+    this.img=this.destinationList[0].images.png;
+    this.distance=this.destinationList[0].distance;
+    this.travel=this.destinationList[0].travel;
   }
   goPlanet(id:number){
     this.id=+id;
@@ -30,6 +34,5 @@ export class DestinationComponent implements OnInit {
     this.img=this.planetItem.images.png,
     this.distance=this.planetItem.distance,
     this.travel=this.planetItem.travel
-    console.log(this.planetItem.name)
   }
 }

@@ -1,11 +1,15 @@
 <div class="container grid-2">
     <div class="pick-section section">
         <p class="P1">01. PICK YOUR DESTINATION</p>
-        <img src={{img}} alt="">
+        <div class="img">
+            <img src={{img}} alt="">
+        </div> 
     </div>
     <div class="planet-section section" >
         <ul class="planet-list" *ngFor="let planet of planetList">
-            <li><a (click)="goPlanet(planet.id)" [routerLink]="['/destination',planet.name]">{{planet.name}}</a></li>
+            <div class="flex">
+                <li><a (click)="goPlanet(planet.id)" [routerLink]="['/destination',planet.name]" class="P1">{{planet.name}}</a></li>
+            </div>
         </ul>
         <div class="planet-info">
             <div class="planet-info-content">
