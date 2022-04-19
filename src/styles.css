@@ -18,10 +18,17 @@
     font-size: 2rem;
     text-transform: uppercase;
 }
+.P5{
+    font-size: 1.3rem;
+}
 .H1{
     font-size: 4rem;
     font-weight: 500;
     padding: 2rem 0;
+}
+.H2{
+    font-size: 2rem;
+    padding: 1rem 0;
 }
 ul{
     list-style-type: none;
@@ -30,6 +37,15 @@ a{
     text-decoration: none;
     color: white;
 }
-@media screen and (max-width:768px){
-    
+@media screen and (min-width:768px) {
+    .P1{
+        font-size: 1.5rem;
+    }
+    .H1{
+        font-size: 5.2rem;
+    }
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

@@ -36,9 +36,24 @@
 /*media query*/
 @media only screen and (min-width:768px) {
     .container{
-        padding:0 5rem;
+        padding:5rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+    }
+    .explore{
+        height: 200px;
+        width: 200px;
+    }
+    .explore p{
+        font-size: 1.7rem;
+    }
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .H1{
+        font-size: 5rem;
     }
 }
