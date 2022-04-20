@@ -1,5 +1,6 @@
 import { NgModule, PLATFORM_INITIALIZER } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CrewItemComponent } from './crew-item/crew-item.component';
 import { CrewComponent } from './crew/crew.component';
 import { DestinationComponent } from './destination/destination.component';
 import { HomeComponent } from './home/home.component';
@@ -33,7 +34,23 @@ const routes: Routes = [
   },
   {
     path:'crew',
-    component:CrewComponent
+    component:CrewComponent,
+    children:[
+      {
+        path:':name',
+        component:CrewItemComponent,
+      },
+      {
+        path:'* *',
+        component:CrewItemComponent,
+      },
+      {
+        path:'* *',
+        redirectTo:'/crew',
+        pathMatch:'full'
+        
+      }
+    ]
   },
   {
     path:'tech',

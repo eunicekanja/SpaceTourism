@@ -101,7 +101,7 @@ export class AllDataService {
     {
       id:4,
       name: "Anousheh Ansari",
-      image: {
+      images: {
         png: "./assets/crew/image-anousheh-ansari.png",
         webp: "./assets/crew/image-anousheh-ansari.webp"
       },

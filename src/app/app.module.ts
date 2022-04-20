@@ -10,6 +10,7 @@ import { TechComponent } from './tech/tech.component';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { AllDataService } from './all-data.service';
 import { PlanetComponent } from './planet/planet.component';
+import { CrewItemComponent } from './crew-item/crew-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PlanetComponent } from './planet/planet.component';
     CrewComponent,
     TechComponent,
     MainHomeComponent,
-    PlanetComponent
+    PlanetComponent,
+    CrewItemComponent
   ],
   imports: [
     BrowserModule,

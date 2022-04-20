@@ -22,7 +22,7 @@
     height: 100%;
 }
 .navigate-dots{
-    display:flex;
+    display:inline-flex;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -36,11 +36,14 @@
     cursor: pointer;
     margin-left:1rem ;
 }
+.navigate-2{
+    background-color: black;
+}
 @media screen and (min-width:768px) {
     .container{
         padding: 6rem 6rem 0 6rem;
         height: 100vh;
-        overflow: hidden;
+        overflow: hiddens;
     }
    .grid-2{
        display: grid;
