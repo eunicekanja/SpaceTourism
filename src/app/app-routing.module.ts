@@ -1,10 +1,12 @@
-import { NgModule, PLATFORM_INITIALIZER } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { CrewItemComponent } from './crew-item/crew-item.component';
 import { CrewComponent } from './crew/crew.component';
 import { DestinationComponent } from './destination/destination.component';
 import { HomeComponent } from './home/home.component';
 import { PlanetComponent } from './planet/planet.component';
+import { TechItemComponent } from './tech-item/tech-item.component';
 import { TechComponent } from './tech/tech.component';
 
 const routes: Routes = [
@@ -54,7 +56,14 @@ const routes: Routes = [
   },
   {
     path:'tech',
-    component:TechComponent
+    component:TechComponent,
+    children:[
+      {
+        path:':id',
+        component:TechItemComponent,
+
+      }
+    ]
   },
 
 ];

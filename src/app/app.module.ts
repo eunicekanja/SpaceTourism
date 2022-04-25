@@ -11,6 +11,7 @@ import { MainHomeComponent } from './main-home/main-home.component';
 import { AllDataService } from './all-data.service';
 import { PlanetComponent } from './planet/planet.component';
 import { CrewItemComponent } from './crew-item/crew-item.component';
+import { TechItemComponent } from './tech-item/tech-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CrewItemComponent } from './crew-item/crew-item.component';
     TechComponent,
     MainHomeComponent,
     PlanetComponent,
-    CrewItemComponent
+    CrewItemComponent,
+    TechItemComponent
   ],
   imports: [
     BrowserModule,

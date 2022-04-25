@@ -4,18 +4,16 @@
 </div>
 <div class="tech-content grid-2">
     <div class="tech-image">
-        <img src="/assets/technology/image-launch-vehicle-landscape.jpg" alt="">
+        <img src={{image}} alt="">
     </div>
     <div class="tech-info grid-3">
-        <ul class="tech-links-list">
-            <li><a href="">01</a></li>
-            <li><a href="">02</a></li>
-            <li><a href="">03</a></li>
+        <ul class="tech-links-list" *ngFor="let techItem of tech">
+            <li><a [routerLink]="['/tech',techItem.name]" (click)="changeTech(techItem.id)">{{techItem.id}}</a></li>
         </ul>
         <div class="tech-info-content">
             <p class="P2">THE TERMINOLOGY</p>
-            <p class="H2">LAUNCH VEHICLE</p>
-            <p class="P2">Launch vehicle A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+            <p class="H2">{{name}}</p>
+            <p class="P2">{{desc}}</p>
         </div>
     </div>
 </div>
